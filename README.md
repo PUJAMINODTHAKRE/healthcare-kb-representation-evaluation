@@ -47,20 +47,17 @@ The study evaluates each representation paradigm along four major dimensions:
 
 ### Reasoning Depth
 
-**Reasoning depth** captures the number of inferential steps required to derive an answer from the available knowledge.
+Reasoning depth measures how many inferential steps are required to derive an answer.
 
-For graph-based reasoning, the study defines it as the **minimum length of a valid reasoning path** that supports a query:
+For graph-based reasoning, it is defined as the **minimum path length among all valid reasoning paths supporting a query**:
 
 $$
 RD(q)=\min_{p\in P(q)} |p|
 $$
 
-where:
+Here, \(P(q)\) denotes the set of valid reasoning paths for query \(q\), and \(|p|\) denotes the length of path \(p\).
 
-- \(P(q)\) is the set of valid reasoning paths supporting query \(q\)
-- \(|p|\) is the length of a reasoning path \(p\)
-
-Thus, **smaller values indicate shallower reasoning**, while larger values correspond to deeper multi-step inference.
+> **Interpretation:** a direct fact retrieval has shallow reasoning, whereas an answer requiring several connected inference steps has greater reasoning depth.
 
 ## Research Pipeline
 
