@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use or reference this repository, please cite the associated published paper."
+title: "Healthcare Knowledge Representation: Comparative Evaluation"
+abstract: "Data-free research companion documenting the evaluation framework, benchmark structure, comparative interpretation, and author contributions for a published study of knowledge-representation paradigms in healthcare question answering."
+authors:
+  - family-names: "Tripathi"
+    given-names: "Atul Kumar"
+  - family-names: "Thakre"
+    given-names: "Puja Minodji"
+  - family-names: "Chatterjee"
+    given-names: "Niladri"
+preferred-citation:
+  type: conference-paper
+  title: "Knowledge Representation for Healthcare Systems: A Comparative Analysis of Performance of Different Representation Paradigms"
+  authors:
+    - family-names: "Tripathi"
+      given-names: "Atul Kumar"
+    - family-names: "Thakre"
+      given-names: "Puja Minodji"
+    - family-names: "Chatterjee"
+      given-names: "Niladri"
+  collection-title: "Lecture Notes in Networks and Information Systems"
+  volume: 1950
+  pages: "38-54"
+  publisher: "Springer"
+  year: 2026
+  doi: "10.1007/978-3-032-24807-7_4"
