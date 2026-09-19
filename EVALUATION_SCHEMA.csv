@@ -1,0 +1,5 @@
+dimension,definition,example_focus
+Semantic Expressiveness,"Ability to represent hierarchical, relational, and contextual clinical knowledge","Concepts, relations, hierarchies, context"
+Query Coverage,"Number of benchmark query types answered successfully","Q1 through Q5"
+Explainability,"Availability of transparent reasoning traces","Rules, query results, graph paths"
+Scalability,"Ability to extend to larger datasets and more complex reasoning","Larger clinical corpora, richer reasoning"
