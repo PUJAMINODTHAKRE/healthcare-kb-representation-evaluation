@@ -1,0 +1,31 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets / local configuration
+.env
+.env.*
+!.env.example
+
+# Local research data — never commit patient-level material
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.sqlite
+*.db
+*.parquet
+/data_private/
+/data_local/
