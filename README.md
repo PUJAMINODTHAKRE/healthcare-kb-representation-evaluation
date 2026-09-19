@@ -45,17 +45,22 @@ The study evaluates each representation paradigm along four major dimensions:
 | **Explainability** | Transparency of the reasoning process and availability of interpretable traces |
 | **Scalability** | Ability to accommodate larger datasets and increasingly complex reasoning tasks |
 
-**Reasoning depth** is examined alongside these dimensions to characterize how many inferential steps are required to derive an answer.
+### Reasoning Depth
 
-For graph-based reasoning, the paper defines reasoning depth as the minimum length of a valid reasoning path supporting a query:
+**Reasoning depth** captures the number of inferential steps required to derive an answer from the available knowledge.
 
-\[
+For graph-based reasoning, the study defines it as the **minimum length of a valid reasoning path** that supports a query:
+
+$$
 RD(q)=\min_{p\in P(q)} |p|
-\]
+$$
 
-where \(P(q)\) denotes the set of valid reasoning paths supporting the answer to query \(q\).
+where:
 
----
+- \(P(q)\) is the set of valid reasoning paths supporting query \(q\)
+- \(|p|\) is the length of a reasoning path \(p\)
+
+Thus, **smaller values indicate shallower reasoning**, while larger values correspond to deeper multi-step inference.
 
 ## Research Pipeline
 
