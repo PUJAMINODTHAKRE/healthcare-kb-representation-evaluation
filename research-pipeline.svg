@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="410" viewBox="0 0 1200 410">
+  <rect width="1200" height="410" rx="28" fill="#f7fafc"/>
+  <text x="70" y="55" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#17324d">Evaluation architecture</text>
+  <text x="70" y="84" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5a7084">A controlled comparison from clinical knowledge to reasoning capability</text>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <g stroke="#6b8296" stroke-width="2" fill="#ffffff">
+      <rect x="55" y="135" width="190" height="94" rx="18"/>
+      <rect x="300" y="135" width="190" height="94" rx="18"/>
+      <rect x="545" y="135" width="190" height="94" rx="18"/>
+      <rect x="790" y="135" width="150" height="94" rx="18"/>
+      <rect x="995" y="135" width="150" height="94" rx="18"/>
+    </g>
+    <g fill="#17324d" font-size="18" font-weight="700">
+      <text x="150" y="170">47 records</text><text x="150" y="197">clinical benchmark</text>
+      <text x="395" y="170">Common schema</text><text x="395" y="197">semantic alignment</text>
+      <text x="640" y="170">7 paradigms</text><text x="640" y="197">classical → graph</text>
+      <text x="865" y="170">Q1 → Q5</text><text x="865" y="197">reasoning ladder</text>
+      <text x="1070" y="170">4 dimensions</text><text x="1070" y="197">comparative view</text>
+    </g>
+    <g stroke="#4e6d86" stroke-width="3" fill="none">
+      <path d="M245 182 H300"/><path d="M490 182 H545"/><path d="M735 182 H790"/><path d="M940 182 H995"/>
+    </g>
+    <g fill="#5a7084" font-size="14">
+      <text x="150" y="273">cardiovascular</text><text x="150" y="293">patient records</text>
+      <text x="395" y="273">like-for-like</text><text x="395" y="293">representation</text>
+      <text x="640" y="273">7 knowledge</text><text x="640" y="293">formalisms</text>
+      <text x="865" y="273">Boolean →</text><text x="865" y="293">contextual</text>
+      <text x="1070" y="273">coverage · depth</text><text x="1070" y="293">explainability · scale</text>
+    </g>
+    <rect x="335" y="335" width="530" height="40" rx="20" fill="#e8f1f5" stroke="#b5c9d5"/>
+    <text x="600" y="361" fill="#17324d" font-size="16" font-weight="700">Published result: Knowledge Graphs covered all five query types</text>
+  </g>
+</svg>
