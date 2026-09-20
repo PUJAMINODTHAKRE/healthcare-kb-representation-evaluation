@@ -25,28 +25,29 @@
 | | |
 |---|---|
 | **Domain** | Healthcare Question Answering |
+| **Research Theme** | Knowledge Representation and Reasoning |
 | **Benchmark** | 47 curated cardiovascular patient records |
-| **Queries** | 5 progressively complex clinical queries |
-| **Paradigms** | 7 Knowledge Representation approaches |
-| **Evaluation** | Semantic expressiveness · Query coverage · Explainability · Scalability |
-| **Core reasoning concept** | Reasoning depth |
+| **Clinical Queries** | 5 progressively complex benchmark queries |
+| **KR Paradigms** | 7 representation approaches |
+| **Evaluation Dimensions** | Semantic expressiveness · Query coverage · Explainability · Scalability |
+| **Core Reasoning Measure** | Reasoning depth |
 | **Publication** | Springer, 2026 |
 
 ---
 
 ## Overview
 
-Healthcare Question Answering Systems require more than retrieving isolated facts. Clinical questions may involve logical conditions, quantified statements, relationships among patient attributes, interacting comorbidities, and contextual information.
+Healthcare Question Answering Systems (QAS) require more than the retrieval of isolated facts. Clinical questions may involve logical conditions, quantified statements, relationships among patient attributes, interacting comorbidities, treatment guidance, and contextual information.
 
 This research investigates how the choice of **Knowledge Representation (KR)** paradigm influences the reasoning capability and answer quality of healthcare expert systems.
 
-A common cardiovascular knowledge domain was used to compare:
+The study examines seven representation paradigms within a common evaluation framework:
 
 **Propositional Logic · First-Order Predicate Logic · Rule-Based Systems · Relational Databases · Frame-Based Models · Ontologies · Knowledge Graphs**
 
-The experimental benchmark consists of **47 curated patient records** and **five clinical queries (Q1–Q5)** designed to progress from simple Boolean reasoning toward quantified, relational, multi-relational, and contextual reasoning.
+The comparison is grounded in a curated cardiovascular benchmark containing **47 patient records** and **five clinical queries (Q1–Q5)** designed to progress from simple Boolean reasoning toward quantified, relational, multi-relational, and contextual reasoning.
 
-The study was published in the proceedings of the **2026 Computing Conference** by Springer.
+The research was published in the proceedings of the **2026 Computing Conference** by Springer.
 
 ### Publication
 
@@ -66,37 +67,53 @@ Lecture Notes in Networks and Information Systems, Vol. 1950, pp. 38–54, Sprin
 
 > **How does the choice of knowledge representation technique influence the reasoning performance and answer quality of expert systems in the healthcare domain?**
 
-The study addresses this question through a common representation framework and a sequence of benchmark queries with increasing reasoning complexity.
+The study addresses this question by evaluating multiple knowledge-representation paradigms under a common representation framework and progressively more demanding clinical queries.
+
+---
+
+## Research Perspective
+
+The central idea of the study is that **the way knowledge is represented influences the kinds of reasoning an intelligent system can perform**.
+
+Rather than evaluating a representation technique on a single task, the study uses a sequence of queries with increasing reasoning complexity.
+
+This creates a progression from:
+
+**Boolean → Quantified → Relational → Multi-relational → Contextual**
+
+The framework therefore focuses on the relationship between:
+
+**Representation → Query Complexity → Reasoning Capability → Explainability**
 
 ---
 
 ## What Was Compared?
 
-The study examines the progression from classical symbolic representations to graph-based knowledge representation.
+The study evaluates the following knowledge-representation paradigms.
 
 | Paradigm | Representation idea |
 |---|---|
 | **Propositional Logic** | Atomic propositions and logical conditions |
-| **First-Order Predicate Logic** | Variables, predicates, relations, and quantification |
-| **Rule-Based Systems** | Explicit IF–THEN knowledge and inference rules |
+| **First-Order Predicate Logic (FOPL)** | Variables, predicates, relationships, and quantification |
+| **Rule-Based Systems** | Explicit IF–THEN rules and inference |
 | **Relational Databases** | Structured tabular representation queried through SQL |
-| **Frame-Based Models** | Entities represented through slot–filler structures |
+| **Frame-Based Models** | Entities represented using slot–filler structures |
 | **Ontologies** | Formal concepts, hierarchies, and semantic relationships |
-| **Knowledge Graphs** | Entities and relations represented as interconnected graph structures |
+| **Knowledge Graphs** | Interconnected entities and relations represented as a graph |
 
-The common domain schema was used to make the comparison as consistent as possible across the representation paradigms.
+A common cardiovascular knowledge schema was used to support the comparative analysis.
 
 ---
 
 ## Evaluation Framework
 
-The evaluation considers four major dimensions:
+The study considers four major evaluation dimensions:
 
 | Dimension | What it examines |
 |---|---|
 | **Semantic Expressiveness** | Ability to represent hierarchical, relational, and contextual knowledge |
-| **Query Coverage** | Which benchmark queries can be successfully answered |
-| **Explainability** | Transparency of reasoning and availability of interpretable traces |
+| **Query Coverage** | Which benchmark queries can be answered successfully |
+| **Explainability** | Transparency of the reasoning process and availability of interpretable traces |
 | **Scalability** | Ability to accommodate larger datasets and increasingly complex reasoning tasks |
 
 ### Reasoning Depth
@@ -109,67 +126,14 @@ For graph-based reasoning, the paper defines reasoning depth as the minimum path
   <strong><code>RD(q) = min<sub>p ∈ P(q)</sub> |p|</code></strong>
 </p>
 
-where `P(q)` denotes the set of valid reasoning paths supporting query `q`, and `|p|` denotes the path length.
+where:
 
-Thus, direct fact retrieval corresponds to shallow reasoning, while answers requiring several connected inferential steps correspond to deeper reasoning.
+- `P(q)` denotes the set of valid reasoning paths supporting query `q`
+- `|p|` denotes the length of reasoning path `p`
 
----
+A direct fact retrieval therefore corresponds to shallow reasoning, while an answer requiring several connected inferential steps corresponds to deeper reasoning.
 
-## Benchmark Design
-
-The benchmark uses **47 curated cardiovascular patient records** and five clinical queries designed to increase progressively in complexity.
-
-### Q1 — Boolean
-
-> **“Is a patient at risk of heart disease if chest pain is present and smoking history is negative?”**
-
-**Reasoning type:** Boolean conditions
-
----
-
-### Q2 — Universal
-
-> **“Are all patients over 60 years old with hypertension at elevated risk of cardiovascular disease?”**
-
-**Reasoning type:** Universal / quantified reasoning
-
----
-
-### Q3 — Relational
-
-> **“What are the cardiovascular risks for patients with both diabetes and obesity?”**
-
-**Reasoning type:** Relational reasoning across patient attributes
-
----
-
-### Q4 — Multi-relational
-
-> **“Which treatment guidelines are applicable for diabetic patients with left ventricular hypertrophy and a history of atrial fibrillation?”**
-
-**Reasoning type:** Multi-relational reasoning across comorbidities, patient history, and treatment guidance
-
----
-
-### Q5 — Contextual
-
-> **“Suggest interventions for patients with comorbidities similar to those reported in recent literature.”**
-
-**Reasoning type:** Contextual reasoning and integration of heterogeneous knowledge
-
----
-
-## Progressive Query Complexity
-
-The benchmark intentionally follows the progression:
+For example, if a valid reasoning chain follows:
 
 ```text
-Boolean
-   ↓
-Quantified
-   ↓
-Relational
-   ↓
-Multi-relational
-   ↓
-Contextual
+A → B → C → D
