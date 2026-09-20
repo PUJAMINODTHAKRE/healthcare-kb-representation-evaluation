@@ -61,29 +61,9 @@ Here, \(P(q)\) denotes the set of valid reasoning paths for query \(q\), and \(|
 
 ## Research Pipeline
 
-```mermaid
-flowchart LR
-    A["Clinical Knowledge<br/>Cardiovascular Domain"]
-    B["Unified Representation<br/>Schema"]
-    C["7 KR Paradigms"]
-    D["5 Progressive<br/>Clinical Queries"]
-    E["Prototype Implementation"]
-    F["Comparative Evaluation"]
-    G["Research Findings"]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-
-    F --- H["Query Coverage"]
-    F --- I["Reasoning Depth"]
-    F --- J["Explainability"]
-    F --- K["Semantic Expressiveness"]
-    F --- L["Scalability"]
-```
+<p align="center">
+  <img src="research-pipeline.svg" alt="Research Pipeline" width="900">
+</p>
 
 The underlying clinical knowledge was aligned across the paradigms to reduce representational bias.
 
@@ -327,6 +307,7 @@ healthcare-kb-representation-evaluation/
 ├── CITATION.cff
 ├── NOTICE.md
 ├── REPOSITORY_MAP.md
+├── research-pipeline.svg
 │
 ├── docs/
 │   ├── METHODOLOGY.md
